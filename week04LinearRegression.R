@@ -1,5 +1,5 @@
 # Kaushlendra Kumar Verma
-# MIS Practice chapter 3
+# MIS Practice chapter 4
 # week04LinearRegression.R
 
 # setwd("C:/Users/User/OneDrive - University of Arizona/MSBA/09_Data Mining_MIS 545 301-7W1/Week 4")
@@ -146,6 +146,7 @@ summary(healthInsuranceModel)
 
 # Test for multicollinearity
 ols_vif_tol(healthInsuranceModel)
+
 
 
 
