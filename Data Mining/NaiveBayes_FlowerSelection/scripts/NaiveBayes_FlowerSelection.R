@@ -25,7 +25,7 @@ library(e1071)
 # f for factor
 # D for date
 # T for datetime
-iris <- read_csv(file = "IrisVarietiesBinned.csv",
+iris <- read_csv(file = "data/IrisVarietiesBinned.csv",
                  col_types = "nnnnf",
                  col_names = TRUE)
 
