@@ -26,7 +26,7 @@ library(rpart.plot)
 # f for factor
 # D for date
 # T for datetime
-riceFarm <- read_csv(file = "IndonesianRiceFarms.csv",
+riceFarm <- read_csv(file = "data/IndonesianRiceFarms.csv",
                      col_types = "fniiinf",
                      col_names = TRUE )
 
