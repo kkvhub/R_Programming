@@ -10,12 +10,8 @@
 
 ## 📘 Project Overview
 
-This project applies **supervised machine learning models** in R to predict the 
-**optimal distribution channel (Direct vs Indirect)** for **Pepsi** across 
-**target location**.  
-The goal is to enable **data‑driven decisions** for selecting efficient 
-distribution channels based on **demographics, market type, 
-and revenue potential**.
+This project applies **supervised machine learning models** in R to predict the **optimal distribution channel (Direct vs Indirect)** for **Pepsi** across targel study area.  
+The goal is to enable **data‑driven decisions** for selecting efficient distribution channels based on **demographics, market type, and revenue potential**.
 
 Models compared:
 
@@ -44,6 +40,7 @@ R_Programming/
 ---
 
 ## 📑 Dataset Description
+
 
 | Variable | Type | Description |
 |-----------|------|-------------|
@@ -76,18 +73,10 @@ R_Programming/
 ### **3️⃣ Model Training & Evaluation**
 | Model | Key Steps | Accuracy | FPR | FNR | Key Findings |
 |:------|:-----------|:----------|:----|:----|:--------------|
-| **Decision Tree (rpart)** 
-| `cp = 0.0001` → simple structure & high stability | 99.27 % | 0 % | 6.25 % 
-| Highly accurate, clear rule‑based splits |
-| **Naïve Bayes (e1071)** 
-| Binned numeric vars into 10 equal frequency bins 
-| 99.27 % | 0 % | 6.67 % | Performs well even with moderate data imbalance |
-| **Logistic Regression** 
-| Log‑transform + dummy encoding + SMOTE | 94.89 % | 5.78 % | 0 % 
-| `Vehicles` & `PotentialRevenue` significant predictors |
-| **k‑Nearest Neighbors** 
-| Optimal k = 39 (√n rounded to odd) | 97.44 % | 2.47 % | 3.12 % 
-| Balanced performance with low error rates |
+| **Decision Tree (rpart)** | `cp = 0.0001` → simple structure & high stability | 99.27 % | 0 % | 6.25 % | Highly accurate, clear rule‑based splits |
+| **Naïve Bayes (e1071)** | Binned numeric vars into 10 equal frequency bins | 99.27 % | 0 % | 6.67 % | Performs well even with moderate data imbalance |
+| **Logistic Regression** | Log‑transform + dummy encoding + SMOTE | 94.89 % | 5.78 % | 0 % | `Vehicles` & `PotentialRevenue` significant predictors |
+| **k‑Nearest Neighbors** | Optimal k = 39 (√n rounded to odd) | 97.44 % | 2.47 % | 3.12 % | Balanced performance with low error rates |
 
 ---
 
